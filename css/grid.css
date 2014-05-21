@@ -1,0 +1,228 @@
+/*
+  Biblioteca CSS
+  1200 Fluid Grid System [Baseado na arquitetura do 960 Grid System]
+  Versão modificada 0.2
+  
+  Desenvolvido por: Afonso Pacifer
+*/
+
+
+/* Configurações basicas
+----------------------------------------------------------------------------------------------------*/
+.container {
+margin-left:auto;
+margin-right:auto;
+width:100%;
+max-width:1200px; /* Largura maxima */
+}
+
+body {}
+
+/* Configuração Golbal dos grids
+----------------------------------------------------------------------------------------------------*/
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16,
+.grid_17,
+.grid_18,
+.grid_19,
+.grid_20,
+.grid_21,
+.grid_22,
+.grid_23,
+.grid_24 {
+display: inline; 
+float: left;
+margin-left: 0.5208333333333333%;
+margin-right: 0.5208333333333333%;
+}
+
+/* Largura dos grids em % (Valor em pixel baseado na largura maxima de 1200px)
+----------------------------------------------------------------------------------------------------*/
+.container .grid_1      {width:3.125%;}                 /* 37.5px    */
+.container .grid_2      {width:7.291766666666666%;}     /* 87.5012px */
+.container .grid_3      {width:11.45833333333333%;}     /* 137.5px   */
+.container .grid_4      {width:15.625%;}                /* 187.5px   */
+.container .grid_5      {width:19.79166666666667%;}     /* 237.5px   */
+.container .grid_6      {width:23.95833333333333%;}     /* 287.5px   */
+.container .grid_7      {width:28.125%;}                /* 337.5px   */
+.container .grid_8      {width:32.29166666666667%;}     /* 387.5px   */
+.container .grid_9      {width:36.45833333333333%;}     /* 437.5px   */
+.container .grid_10     {width:40.625%;}                /* 487.5px   */
+.container .grid_11     {width:44.79166666666667%;}     /* 537.5px   */
+.container .grid_12     {width:48.95833333333333%;}     /* 587.5px   */
+.container .grid_13     {width:53.125%;}                /* 637.5px   */
+.container .grid_14     {width:57.29166666666667%;}     /* 687.5px   */
+.container .grid_15     {width:61.45833333333333%;}     /* 737.5px   */
+.container .grid_16     {width:65.625%;}                /* 787.5px   */
+.container .grid_17     {width:69.79166666666667%;}     /* 837.5px   */
+.container .grid_18     {width:73.95833333333333%;}     /* 887.5px   */
+.container .grid_19     {width:78.125%;}                /* 937.5px   */
+.container .grid_20     {width:82.29166666666667%;}     /* 987.5px   */
+.container .grid_21     {width:86.45833333333333%;}     /* 1037.5px  */
+.container .grid_22     {width:90.625%;}                /* 1087.5px  */
+.container .grid_23     {width:94.79166666666667%;}     /* 1137.5px  */
+.container .grid_24     {width:98.95833333333333%;}     /* 1187.5px  */
+
+/* Preenchimento dos espaços antes do grid
+----------------------------------------------------------------------------------------------------*/
+.container .prefix_1  {padding-left:4.166666666666667%;}
+.container .prefix_2  {padding-left:8.333333333333333%;}
+.container .prefix_3  {padding-left:12.5%;}
+.container .prefix_4  {padding-left:16.66666666666667%;}
+.container .prefix_5  {padding-left:20.83333333333333%;}
+.container .prefix_6  {padding-left:25%;}
+.container .prefix_7  {padding-left:29.16666666666667%;}
+.container .prefix_8  {padding-left:33.33333333333333%;}
+.container .prefix_9  {padding-left:37.5%;}
+.container .prefix_10 {padding-left:41.66666666666667%;}
+.container .prefix_11 {padding-left:45.83333333333333%;}
+.container .prefix_12 {padding-left:50%;}
+.container .prefix_13 {padding-left:54.16666666666667%;}
+.container .prefix_14 {padding-left:58.33333333333333%;}
+.container .prefix_15 {padding-left:62.5%;}
+.container .prefix_16 {padding-left:66.66666666666667%;}
+.container .prefix_17 {padding-left:70.83333333333333%;}
+.container .prefix_18 {padding-left:75%;}
+.container .prefix_19 {padding-left:79.16666666666667%;}
+.container .prefix_20 {padding-left:83.33333333333333%;}
+.container .prefix_21 {padding-left:87.5%;}
+.container .prefix_22 {padding-left:91.66666666666667%;}
+.container .prefix_23 {padding-left:95.83333333333333%;}
+
+/* Elimina dos espaços apos do grid quando a largura é igual ou menor a  768px
+----------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+.container 
+.prefix_1,
+.prefix_2,
+.prefix_3,
+.prefix_4,
+.prefix_5,
+.prefix_6,
+.prefix_7,
+.prefix_8,
+.prefix_9,
+.prefix_10,
+.prefix_11,
+.prefix_12,
+.prefix_13,
+.prefix_14,
+.prefix_15,
+.prefix_16,
+.prefix_17,
+.prefix_18,
+.prefix_19,
+.prefix_20,
+.prefix_21,
+.prefix_22,
+.prefix_23 {padding:0px;}
+}
+
+/* Preenchimento dos espaços apos do grid
+----------------------------------------------------------------------------------------------------*/
+.container .suffix_1  {padding-right:4.166666666666667%;}
+.container .suffix_2  {padding-right:8.333333333333333%;}
+.container .suffix_3  {padding-right:12.5%;}
+.container .suffix_4  {padding-right:16.66666666666667%;}
+.container .suffix_5  {padding-right:20.83333333333333%;}
+.container .suffix_6  {padding-right:25%;}
+.container .suffix_7  {padding-right:29.16666666666667%;}
+.container .suffix_8  {padding-right:33.33333333333333%;}
+.container .suffix_9  {padding-right:37.5%;}
+.container .suffix_10 {padding-right:41.66666666666667%;}
+.container .suffix_11 {padding-right:45.83333333333333%;}
+.container .suffix_12 {padding-right:50%;}
+.container .suffix_13 {padding-right:54.16666666666667%;}
+.container .suffix_14 {padding-right:58.33333333333333%;}
+.container .suffix_15 {padding-right:62.5%;}
+.container .suffix_16 {padding-right:66.66666666666667%;}
+.container .suffix_17 {padding-right:70.83333333333333%;}
+.container .suffix_18 {padding-right:75%;}
+.container .suffix_19 {padding-right:79.16666666666667%;}
+.container .suffix_20 {padding-right:83.33333333333333%;}
+.container .suffix_21 {padding-right:87.5%;}
+.container .suffix_22 {padding-right:91.66666666666667%;}
+.container .suffix_23 {padding-right:95.83333333333333%;}
+
+/* Elimina dos espaços apos do grid quando a largura é igual ou menor a  768px
+----------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+.container 
+.suffix_1,
+.suffix_2,
+.suffix_3,
+.suffix_4,
+.suffix_5,
+.suffix_6,
+.suffix_7,
+.suffix_8,
+.suffix_9,
+.suffix_10,
+.suffix_11,
+.suffix_12,
+.suffix_13,
+.suffix_14,
+.suffix_15,
+.suffix_16,
+.suffix_17,
+.suffix_18,
+.suffix_19,
+.suffix_20,
+.suffix_21,
+.suffix_22,
+.suffix_23 {padding-right:0;}
+}
+
+/* Corrige possiveis bugs de quebra de linha
+----------------------------------------------------------------------------------------------------*/
+.clear {
+clear: both;
+display: block;
+overflow: hidden;
+visibility: hidden;
+width: 0;
+height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after {
+content: '.';
+display: block;
+overflow: hidden;
+visibility: hidden;
+font-size: 0;
+line-height: 0;
+width: 0;
+height: 0;
+}
+
+.clearfix:after,
+.container:after {
+clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix,
+.container {}

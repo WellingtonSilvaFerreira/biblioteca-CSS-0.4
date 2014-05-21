@@ -1,0 +1,139 @@
+/* Ferramentas
+----------------------------------------------------------------------------------------------------*/
+/* Modelo de adaptação para largura igual ou menor a  768px */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Modelo de adaptação para largura igual ou menor a  480px */
+@media screen and (max-width: 480px) {
+
+}
+
+/* Configurações globais
+----------------------------------------------------------------------------------------------------*/
+body {}
+
+h1 {} 
+
+h2 {}
+
+a {}
+
+a:hover {}
+
+/* Classes especiais
+----------------------------------------------------------------------------------------------------*/
+.infinito {
+ width:100%;
+}
+
+.botao a{
+ padding:8px 8px 8px 8px;
+ background-color:#060;
+ color:#FFF;
+ border-radius:5px 5px 5px 5px;
+ text-decoration:none;
+}
+
+.botao a:hover{
+ padding:8px 8px 8px 8px;
+ background-color:#090;
+ color:#FFF;
+ border-radius:5px 5px 5px 5px;
+ text-decoration:none;
+}
+
+/* Barra topo
+----------------------------------------------------------------------------------------------------*/
+#barra_topo {background-color:#333;}
+
+@media screen and (max-width: 768px) {
+ #barra_topo {background-color:#0b7af7;}
+}
+
+@media screen and (max-width: 480px) {
+ #barra_topo {background-color:#cb009e;}
+}
+
+#topo {
+ background-color:#ccc;
+ color: #000;
+ text-align: center;
+ margin-top:10px;
+ margin-bottom:10px;
+}
+
+/* Banner
+----------------------------------------------------------------------------------------------------*/
+#banner {
+ background-color:#9ecb00;
+ text-align: center;
+ height: 200px;
+ margin-top: 10px;
+}
+
+/* Conteudo
+----------------------------------------------------------------------------------------------------*/
+#item {
+ height: 100px;
+ background-color:#9ecb00;
+ text-align:center;
+ margin-top:10px;
+ margin-bottom:10px;
+}
+
+@media screen and (max-width: 768px) {
+ #item {width:48.95833333333333%;}
+}
+
+@media screen and (max-width: 480px) {
+ #item {width:98.95833333333333%;}
+}
+
+/* Rodape_superior
+----------------------------------------------------------------------------------------------------*/
+#rodape_superior {
+ background-color:#9ecb00;
+}
+
+#rodape_superior_conteudo {
+ background-color:#ccc;
+ margin-top:10px;
+ margin-bottom:10px;
+ text-align:center;
+}
+
+/* Rodape_inferior
+----------------------------------------------------------------------------------------------------*/
+#rodape_inferior {
+ background-color:#333;
+}
+
+#rodape_inferior_conteudo_left {
+ background-color:#ccc;
+ margin-top:10px;
+ margin-bottom:10px;
+ text-align:center;
+}
+
+@media screen and (max-width: 768px) {
+ #rodape_inferior_conteudo_left {
+  width:98.95833333333333%;
+  margin-bottom:5px;
+ }
+}
+
+#rodape_inferior_conteudo_right {
+ background-color:#ccc;
+ margin-top:10px;
+ margin-bottom:10px;
+ text-align:center;
+}
+
+@media screen and (max-width: 768px) {
+ #rodape_inferior_conteudo_right {
+  width:98.95833333333333%;
+  margin-top:5px;
+ }
+}
