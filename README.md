@@ -1,4 +1,4 @@
-biblioteca-CSS-0.4
+biblioteca-CSS-0.5
 ==================
 
-Biblioteca CSS para desenvolvimento responsivo utilizando um grid de 24 colunas
+Biblioteca CSS para desenvolvimento responsivo baseado em um grid fluido com 24 colunas
